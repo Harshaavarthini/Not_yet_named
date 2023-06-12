@@ -15,8 +15,14 @@
 	<description>Web parent project</description>
 	<packaging>pom</packaging>
 
+	<modules>
+		<module>ShopMeBackend</module>
+	</modules>
+
 	<properties>
 		<java.version>17</java.version>
+		<maven.compiler.source>17</maven.compiler.source>
+		<maven.compiler.target>17</maven.compiler.target>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -26,6 +32,7 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+			<scope>runtime</scope>
 		</dependency>
 
 		<dependency>
